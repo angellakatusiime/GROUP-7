@@ -1,7 +1,7 @@
 # GROUP-7
-#JONAH MUTYABA
-#KUGUMA VICTOR
-#KATUSIIME ANGELLA
+## JONAH MUTYABA
+## KUGUMA VICTOR
+## KATUSIIME ANGELLA
 # Automated Detection of Sea Turtle Facial Patterns Using Bounding Box Frameworks
 
 This project uses a convolutional neural network (CNN) to detect and localize facial patterns of sea turtles in images by predicting bounding boxes. We frame the object detection task as a regression problem where we predict the `x`, `y`, `width`, and `height` of bounding boxes, providing an end-to-end solution from data preparation to model training and evaluation.
@@ -24,7 +24,7 @@ This project uses a convolutional neural network (CNN) to detect and localize fa
 drive.mount('/content/drive')
 
 ## 5. Data Preparation
-### Image Unzipping and Folder Setup:
+ Image Unzipping and Folder Setup:
 Copy and unzip the image dataset into the working directory.
 Set image_folder as the path to the unzipped image folder.
 
@@ -33,7 +33,7 @@ Set image_folder as the path to the unzipped image folder.
 `!unzip -q IMAGES_512.zip`
 `image_folder = 'IMAGES_512'`
 
-### Loading Train Data
+ Loading Train Data
 Load Train.csv containing bounding box coordinates (x, y, w, h) for each image.
 python
 `train = pd.read_csv('drive/My Drive/Turtle_screening/Train.csv')`
@@ -41,7 +41,7 @@ python
 ## 6. Visualizing Sample Image with Bounding Box
 Open an image using PIL and draw a bounding box around the turtle face.
 
-### Data Loading:
+ Data Loading:
 We define a DataBlock with ImageBlock as input and RegressionBlock(n_out=4) as target to predict the bounding box coordinates.
 
 `dblock = DataBlock(
@@ -65,10 +65,10 @@ Fine-tune the model for several epochs.
 `learn.fine_tune(25)`
 
 ## 9. Evaluation and Prediction
-### Intersection over Union (IoU)
+ Intersection over Union (IoU)
 IoU is used as a metric to evaluate bounding box predictions against ground truth.
 
-### Prediction Visualization
+ Prediction Visualization
 For a sample image, we visualize both actual and predicted bounding boxes.
 
 ## 10. Submission Preparation
