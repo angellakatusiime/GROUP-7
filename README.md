@@ -13,7 +13,8 @@
 ## 3. Mutyaba Jonah – Model Training, Validation, and Evaluation
    - Conducted Model Training: He trained the model and monitored the process for any issues, ensuring that the model converged as expected.
    - Handled Validation and Evaluation: He managed the validation phase, assessing metrics such as precision, recall, and map scores to evaluate the model’s performance accurately.
-Note: The Fastai model was as completed as a group effort, with each team member contributing small bits on different aspects including model development, data processing, and feature engineering. 
+     
+### Note: The Fastai model was as completed as a group effort, with each team member contributing small bits on different aspects including model development, data processing, and feature engineering. 
      
 # Automated Detection of Sea Turtle Facial Patterns Using Bounding Box Frameworks
 
